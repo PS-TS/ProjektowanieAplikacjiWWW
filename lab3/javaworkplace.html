@@ -1,0 +1,75 @@
+<html>
+<head>
+<meta http-equiv="Content-type" content="text/html; charset=UTF-8" />
+<meta http-equiv="Content-Language" content="pl" />
+<meta name="Author" content="Piotr S" />
+<title>Moje hobby to Gwiezdne Wojny</title>
+<script src="skrypt.js"></script>
+<script src="skryptB.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<link rel="stylesheet" href="style.css"/>
+</head>
+<body onload="startclock()">
+	
+	<FORM METHOD="POST" NAME="background">
+	<INPUT TYPE="button" VALUE="żółty" ONCLICK="changeBackground('#FFF000')">
+	<INPUT TYPE="button" VALUE="czarny" ONCLICK="changeBackground('#000000')">
+	<INPUT TYPE="button" VALUE="biały" ONCLICK="changeBackground('#FFFFFF')">
+	<INPUT TYPE="button" VALUE="zielony" ONCLICK="changeBackground('#00FF00')">
+	<INPUT TYPE="button" VALUE="niebieski" ONCLICK="changeBackground('#0000FF')">
+	<INPUT TYPE="button" VALUE="pomarańczowy" ONCLICK="changeBackground('#FF8000')">
+	<INPUT TYPE="button" VALUE="szary" ONCLICK="changeBackground('#c0c0c0')">
+	<INPUT TYPE="button" VALUE="czerwony" ONCLICK="changeBackground('#FF0000')">
+	</FORM>
+	
+	<div id="zegarek"></div>
+	<div id="data"></div>
+	
+	<div id="animacjaTestowa1" class="test-block">Kliknij a się powiększe</div>
+	<script>
+	$("#animacjaTestowa1").on("click", function(){
+		$(this).animate({
+			width: "500px",
+			opacity: 0.4,
+			fontSize: "3em",
+			borderWidth: "10px"
+		}, 1500);
+	});
+	</script>
+	
+	<div id="animacjaTestowa2" class="test-block">
+		Najedź kursorem a się powiększe
+	</div>
+	
+	<script>
+	$("#animacjaTestowa2").on({
+		"mouseover" : function() {
+			$(this).animate({
+				width: "300px"
+			}, 800);
+		},
+		"mouseout" : function() {
+			$(this).animate({
+				width: "200px"
+			}, 800);
+		}
+	});
+	</script>
+	
+	<div id="animacjaTestowa3" class="test-block">
+		Kliknij abym urósł
+	</div>
+	<script>
+	$("#animacjaTestowa3").on("click", function(){
+		if (!$(this).is(":animated")) {
+			$(this).animate({
+				width: "+=" +50,
+				height: "+=" +10,
+				opacity: "-=" + 0.1,
+				duration : 3000
+			});
+		}
+	});
+	</script>
+</body>
+</html>

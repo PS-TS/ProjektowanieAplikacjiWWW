@@ -1,3 +1,5 @@
+Projekt niekompletny
+
 artur.samojluk@uwm.edu.pl
 
 (Github, Notepad++)

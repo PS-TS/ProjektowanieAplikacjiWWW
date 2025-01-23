@@ -1,0 +1,123 @@
+body {
+	background-image: url('../Image/DrBa.jpg');
+    background-size: cover;
+	font-family: fantasy;
+}
+#content{
+	width: 1060px;
+	margin: auto;
+	text-align:center;
+	padding: 30px;
+	background-image: url('../Image/older-paper.jpg');
+    background-size: cover;
+	overflow: hidden;
+}
+h1{
+	font-size: 64px;
+}
+h2{
+	font-size: 32px;
+}
+p{
+	font-size: 24px;
+	text-align: justify;
+}
+#uppermenu{
+	clear:both;
+	text-align:center;
+}
+#menubutton{
+	float:left;
+	margin:5px;
+	text-align:center;
+	width: 140px;
+	height:25px;
+	font-size:24px;
+	background-color: rgba(255, 215, 0, 0.3);
+}
+#menubutton a{
+	color:black;
+	text-decoration: none;
+	font-weight: bold;
+}
+#menu{
+	clear:both;
+	display: flex;
+}
+img{
+	width:200px;
+	height: 150px;
+}
+#imagebutton{
+	display: flex; 
+	float:left;
+	margin:5px;
+	text-align:center;
+}
+
+#imagebutton img{
+    width:200px;
+	height: 150px;
+}
+
+#imagebutton a{
+    color:black;
+	text-decoration: none;
+	font-weight: bold;
+}
+form input, form button{
+    width: 250px;
+    padding: 10px;
+    margin-bottom: 15px;
+    border-radius: 4px;
+	font-size:24px;
+}
+form textarea, form label {
+    width: 600px;
+    padding: 10px;
+    margin-bottom: 15px;
+    border-radius: 4px;
+	font-size:24px;
+}
+textarea{
+	width: 500px;
+	height: 200px;
+}
+img#lewy{
+	float: left;
+	margin-right: 10px;
+	height:250px;
+	width:400px;
+}
+img#prawy{
+	float: right;
+	margin-left: 10px;
+	height:250px;
+	width:400px;
+}
+#plac{
+	width: 1060px;
+	height:100px;
+	margin: auto;
+	text-align:center;
+	padding: 30px;
+	background-color:rgb(255,255,255,0.2);
+}
+.test-block {
+	width: 300px;
+	border: 2px solid rgba(255,0,0,1);
+	background: rgba(255,215,0,0.7);
+	text-align: center;
+	color: #000000;
+	padding: 20px;
+	cursor: pointer;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	-webkit-touch-callout: none;
+	-webkit-user-select: none;
+	-moz-user-select: none;
+	-ms-user-select: none;
+	user-select:none;
+	margin:5px;
+}

@@ -1,4 +1,4 @@
-Projekt niekompletny
+Projekt już kompletny
 
 artur.samojluk@uwm.edu.pl
 
